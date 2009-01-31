@@ -81,8 +81,8 @@ if __FILE__ == $0
     
     def test_greater_than
       assert(Clock.new(11, 0, 0) > Clock.new(10, 0, 0), "hour")
-      assert(Clock.new(10, 1, 0) > Clock.new(10, 0, 0), "hour")
-      assert(Clock.new(10, 0, 1) > Clock.new(10, 0, 0), "hour")
+      assert(Clock.new(10, 1, 0) > Clock.new(10, 0, 0), "minute")
+      assert(Clock.new(10, 0, 1) > Clock.new(10, 0, 0), "second")
     end
   end
 
