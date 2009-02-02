@@ -16,3 +16,4 @@ $test_cmd 20 20 20 &&
 echo "test passed!!" && exit
 
 echo "test failed!!"
+exit 1
