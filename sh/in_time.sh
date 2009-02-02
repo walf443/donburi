@@ -4,6 +4,12 @@ from=$1
 to=$2
 now=$3
 
+if [ ! $from ] || [ ! $to ]
+then
+  echo "USAGE: $0 FROM TO [HOUR=NOW]";
+  exit 1;
+fi
+
 if [ ! $now ]
 then
   now=`date "+%H"`;
